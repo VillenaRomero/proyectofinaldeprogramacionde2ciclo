@@ -19,7 +19,7 @@ public class sierra : herenciadevelocidad
 
     void Update()
     {
-        rigibody2D_.linearVelocity = new Vector2(speed * speedy, speed * speedx);
+        rigibody2D_.linearVelocity = new Vector2(speed * speedy * Time.deltaTime, speed * speedx * Time.deltaTime);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
