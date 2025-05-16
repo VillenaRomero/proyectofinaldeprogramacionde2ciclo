@@ -9,8 +9,7 @@ public class sierra : herenciadevelocidad
     public float speed = 4;
     public string nametag = "pared de arriba";
     public string nametag1 = "pared de abajo";
-    public string nametag2 = "bloquedearriba";
-    public string nametag3 = "bloquedeabajo";
+    public string nametag2 = "sierra";
 
     void Start()
     {
@@ -19,18 +18,22 @@ public class sierra : herenciadevelocidad
 
     void Update()
     {
-        rigibody2D_.linearVelocity = new Vector2(speed * speedy * Time.deltaTime, speed * speedx * Time.deltaTime);
+        rigibody2D_.linearVelocity = new Vector2(speed * speedx, speed * speedy);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == nametag || collision.gameObject.tag == nametag3)
+        /*if (collision.gameObject.tag == nametag ||)
         {
             speedy *= -4;
         }
-        else if (collision.gameObject.tag == nametag1 || collision.gameObject.tag == nametag2)
+        else if (collision.gameObject.tag == nametag1 || )
         {
-            speedy *= 4;
+            speedy *= +4;
+        }*/
+        if (collision.gameObject.tag == nametag || collision.gameObject.tag == nametag1 ||collision.gameObject.tag ==nametag2)
+        {
+            speedy *= -1; // Invierte la dirección vertical
         }
     }
 }

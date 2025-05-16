@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sierradederecha Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6689996008569347994, guid: 05c5aec13f2165d47ba18c885a583fa5, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7921743886609175619, guid: 05c5aec13f2165d47ba18c885a583fa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.03
