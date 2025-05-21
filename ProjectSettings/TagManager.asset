@@ -11,6 +11,8 @@ TagManager:
   - sierra
   - bloquedearriba
   - bloquedeabajo
+  - palanca
+  - player
   layers:
   - Default
   - TransparentFX
