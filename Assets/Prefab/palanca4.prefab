@@ -148,6 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   palancaprefab: {fileID: 8429770326335955779, guid: bd25feddb10c00447bedc5e25a93c6e4, type: 3}
-  xposition: 82.2292
+  xposition: 182.64
   yPosition: -2.35
   nametag: player

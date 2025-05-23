@@ -7,8 +7,10 @@ public class movedplayer : herenciadevelocidad
 {
     private Rigidbody2D _compRigidbody2D;
     private SpriteRenderer _comSpriteRenderer;
-    public string nametag = "player";
+    public string nametag = "puerta";
+    public string nametag2 = "sierra";
     public string nivel;
+    public string nivel2;
 
     private void Awake()
     {
@@ -49,6 +51,10 @@ public class movedplayer : herenciadevelocidad
         if (collision.gameObject.tag == nametag)
         {
             SceneManager.LoadScene(nivel);
+        }
+        if (collision.gameObject.tag == nametag2)
+        {
+            SceneManager.LoadScene(nivel2);
         }
     }
 }
