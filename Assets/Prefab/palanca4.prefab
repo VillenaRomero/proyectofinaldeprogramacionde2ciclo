@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8570896870603671327}
   - component: {fileID: 8938160886393029997}
   - component: {fileID: 4304772571581598095}
-  - component: {fileID: 3898963821124340083}
+  - component: {fileID: 7285638877590016825}
   m_Layer: 0
   m_Name: palanca4
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 12.82, y: 9.49}
   m_EdgeRadius: 0
---- !u!114 &3898963821124340083
+--- !u!114 &7285638877590016825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7206135932809386092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e192166d27c9324f8fda57274fdce3e, type: 3}
+  m_Script: {fileID: 11500000, guid: f28c882b100180e46bedf3b82f865f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puertaprefab: {fileID: 0}
-  PuertaHolder: {fileID: 0}
+  palancaprefab: {fileID: 8429770326335955779, guid: bd25feddb10c00447bedc5e25a93c6e4, type: 3}
+  xposition: 82.2292
+  yPosition: -2.35
   nametag: player

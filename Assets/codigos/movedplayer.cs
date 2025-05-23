@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ public class movedplayer : herenciadevelocidad
 {
     private Rigidbody2D _compRigidbody2D;
     private SpriteRenderer _comSpriteRenderer;
-
+    public string nametag = "player";
+    public string nivel;
 
     private void Awake()
     {
@@ -41,5 +43,12 @@ public class movedplayer : herenciadevelocidad
             _comSpriteRenderer.flipY = true;
         }
         _compRigidbody2D.linearVelocity = new Vector2(speedx * horizontal, speedy * vertical);
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == nametag)
+        {
+            SceneManager.LoadScene(nivel);
+        }
     }
 }

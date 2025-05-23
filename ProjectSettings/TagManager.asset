@@ -13,6 +13,7 @@ TagManager:
   - bloquedeabajo
   - palanca
   - player
+  - puerta
   layers:
   - Default
   - TransparentFX

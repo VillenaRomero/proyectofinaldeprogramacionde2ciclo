@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class crearotrapalanca : MonoBehaviour
 {
-    public GameObject palanca2prefab;
-    private GameObject currentpalanca2;
-    public Transform palanca2Holder;
+    public GameObject palancaprefab;
+    public float xposition;
+    public float yPosition;
+
     public string nametag = "player";
     void Start()
     {
@@ -20,7 +22,9 @@ public class crearotrapalanca : MonoBehaviour
     {
         if (collision.gameObject.tag == nametag)
         {
-            currentpalanca2 = Instantiate(palanca2prefab, palanca2Holder);
+            Vector2 positioncreate = new Vector2(xposition, yPosition);
+            GameObject moneda = Instantiate(palancaprefab, positioncreate, transform.rotation);
+            Destroy(this.gameObject);
         }
     }
 

@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28c882b100180e46bedf3b82f865f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palanca2prefab: {fileID: 5243037926903101528, guid: d727b130b1280664db4ab17945e1421e, type: 3}
-  palanca2Holder: {fileID: 0}
+  palancaprefab: {fileID: 5243037926903101528, guid: d727b130b1280664db4ab17945e1421e, type: 3}
+  xposition: 49.14
+  yPosition: -22.39
   nametag: player
