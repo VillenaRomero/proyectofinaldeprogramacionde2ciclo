@@ -14,6 +14,7 @@ TagManager:
   - palanca
   - player
   - puerta
+  - pared
   layers:
   - Default
   - TransparentFX
