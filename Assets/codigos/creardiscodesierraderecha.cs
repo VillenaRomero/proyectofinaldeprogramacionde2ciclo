@@ -45,21 +45,21 @@ public class creardiscodesierraderecha : MonoBehaviour
         currentTimetuCreate2 = currentTimetuCreate2 + Time.deltaTime;
         if (currentTimetuCreate2 >= timeTiCreate2)
         {
-            ShootBullet2();
+            ShootBullet3();
 
             currentTimetuCreate2 = 0;
         }
         currentTimetuCreate3 = currentTimetuCreate3 + Time.deltaTime;
         if (currentTimetuCreate3 >= timeTiCreate3)
         {
-            ShootBullet2();
+            ShootBullet4();
 
             currentTimetuCreate3 = 0;
         }
         currentTimetuCreate4 = currentTimetuCreate4 + Time.deltaTime;
         if (currentTimetuCreate4 >= timeTiCreate4)
         {
-            ShootBullet2();
+            ShootBullet5();
 
             currentTimetuCreate4 = 0;
         }
