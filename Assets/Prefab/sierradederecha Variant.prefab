@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1979112370038898697, guid: 05c5aec13f2165d47ba18c885a583fa5, type: 3}
       propertyPath: speedx
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6689996008569347994, guid: 05c5aec13f2165d47ba18c885a583fa5, type: 3}
       propertyPath: m_Constraints
@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8191512043226783225, guid: 05c5aec13f2165d47ba18c885a583fa5, type: 3}
       propertyPath: m_SortingOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

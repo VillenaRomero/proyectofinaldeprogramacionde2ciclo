@@ -3,14 +3,18 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movedplayer : herenciadevelocidad
+public class movedplayer : MonoBehaviour
 {
+    public int speedx = 5;
+    public int speedy = 5;
     private Rigidbody2D _compRigidbody2D;
     private SpriteRenderer _comSpriteRenderer;
     public string nametag = "puerta";
     public string nametag2 = "sierra";
     public string nivel;
     public string nivel2;
+    public float timeTiCreate = 30;
+    public float currentTimetuCreate;
 
     private void Awake()
     {
@@ -45,6 +49,11 @@ public class movedplayer : herenciadevelocidad
             _comSpriteRenderer.flipY = true;
         }
         _compRigidbody2D.linearVelocity = new Vector2(speedx * horizontal, speedy * vertical);
+        currentTimetuCreate = currentTimetuCreate + Time.deltaTime;
+        if (currentTimetuCreate >= timeTiCreate)
+        {
+            SceneManager.LoadScene(nivel2);
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
