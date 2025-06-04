@@ -32,7 +32,7 @@ public class movimientodepuas : MonoBehaviour
         }*/
         if (collision.gameObject.tag == nametag)
         {
-            Destroy(this.gameObject);
+            speedy = -10;
         }
     }
 }

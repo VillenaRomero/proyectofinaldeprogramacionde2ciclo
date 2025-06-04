@@ -7221,7 +7221,7 @@ MonoBehaviour:
   nametag2: sierra
   nivel: game2
   nivel2: derrota
-  timeTiCreate: 30
+  timeTiCreate: 120
   currentTimetuCreate: 0
 --- !u!61 &2034205400
 BoxCollider2D:

@@ -3,6 +3,7 @@ using UnityEngine;
 public class creardiscodesierraderecha : MonoBehaviour
 {
     public GameObject prefabEnemy;
+    public GameObject prefabsPuas;
     private Transform comTransform;
 
     public float timeTiCreate = 5;
@@ -20,11 +21,27 @@ public class creardiscodesierraderecha : MonoBehaviour
     public float timeTiCreate4 = 5;
     public float currentTimetuCreate4;
 
+    public float TimeTiCreatepua = 16;
+    public float currentTimetuCreatepua;
+
+    public float TimeTiCreatepua2 = 20;
+    public float currentTimetuCreatepua2;
+
+    public float TimeTiCreatepua3 = 24;
+    public float currentTimetuCreatepua3;
+
+    public float TimeTiCreatepua4 = 28;
+    public float currentTimetuCreatepua4;
+
     public Transform spawner1;
     public Transform spawner2;
     public Transform spawner3;
     public Transform spawner4;
     public Transform spawner5;
+    public Transform spawnerpuas1;
+    public Transform spawnerpuas2;
+    public Transform spawnerpuas3;
+    public Transform spawnerpuas4;
 
     private void Update()
     {
@@ -63,6 +80,33 @@ public class creardiscodesierraderecha : MonoBehaviour
 
             currentTimetuCreate4 = 0;
         }
+
+        TimeTiCreatepua = TimeTiCreatepua + Time.deltaTime;
+        if (TimeTiCreatepua>= currentTimetuCreatepua) {
+            CrearPuas1();
+           TimeTiCreatepua = 0;
+        }
+
+        TimeTiCreatepua2 = TimeTiCreatepua2 + Time.deltaTime;
+        if (TimeTiCreatepua2 >= currentTimetuCreatepua2)
+        {
+            CrearPuas2();
+            TimeTiCreatepua2 = 0;
+        }
+
+        TimeTiCreatepua3 = TimeTiCreatepua3 + Time.deltaTime;
+        if (TimeTiCreatepua3 >= currentTimetuCreatepua3)
+        {
+            CrearPuas3();
+            TimeTiCreatepua3 = 0;
+        }
+
+        TimeTiCreatepua4 = TimeTiCreatepua4 + Time.deltaTime;
+        if (TimeTiCreatepua4 >= currentTimetuCreatepua4)
+        {
+            CrearPuas4();
+            TimeTiCreatepua4 = 0;
+        }
     }
     private void ShootBullet1()
     {
@@ -93,5 +137,31 @@ public class creardiscodesierraderecha : MonoBehaviour
         GameObject bullet = Instantiate(prefabEnemy);
         bullet.transform.position = spawner5.position;
         bullet.transform.rotation = transform.rotation;
+    }
+    private void CrearPuas1() {
+        GameObject puas = Instantiate(prefabsPuas);
+        puas.transform.position = spawnerpuas1.position;
+        puas.transform.rotation = transform.rotation;
+    }
+    private void CrearPuas2()
+    {
+        GameObject puas = Instantiate(prefabsPuas);
+        puas.transform.position = spawnerpuas2.position;
+        puas.transform.rotation = transform.rotation;
+
+    }
+    private void CrearPuas3()
+    {
+        GameObject puas = Instantiate(prefabsPuas);
+        puas.transform.position = spawnerpuas3.position;
+        puas.transform.rotation = transform.rotation;
+
+    }
+    private void CrearPuas4()
+    {
+        GameObject puas = Instantiate(prefabsPuas);
+        puas.transform.position = spawnerpuas4.position;
+        puas.transform.rotation = transform.rotation;
+
     }
 }
