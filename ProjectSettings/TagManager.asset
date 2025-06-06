@@ -15,6 +15,10 @@ TagManager:
   - player
   - puerta
   - pared
+  - paredfondo
+  - pareddestruccion
+  - enemigo
+  - wokkietokie
   layers:
   - Default
   - TransparentFX

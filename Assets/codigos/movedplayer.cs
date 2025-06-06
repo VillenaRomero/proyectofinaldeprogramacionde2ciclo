@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class movedplayer : MonoBehaviour
 {
+    public int life = 10;
     public int speedx = 5;
     public int speedy = 5;
     private Rigidbody2D _compRigidbody2D;
     private SpriteRenderer _comSpriteRenderer;
     public string nametag = "puerta";
-    public string nametag2 = "sierra";
+    public string nametag2;
     public string nivel;
     public string nivel2;
     public float timeTiCreate = 30;
@@ -63,7 +64,10 @@ public class movedplayer : MonoBehaviour
         }
         if (collision.gameObject.tag == nametag2)
         {
-            SceneManager.LoadScene(nivel2);
+            life--;
+            if (life <= 0) {
+                SceneManager.LoadScene(nivel2);
+            }
         }
     }
 }

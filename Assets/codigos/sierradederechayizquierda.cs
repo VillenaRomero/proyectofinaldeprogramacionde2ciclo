@@ -18,7 +18,7 @@ public class sierradederechayizquierda : MonoBehaviour
     {
         rigibody2D_.linearVelocity = new Vector2(speed * speedx, speed * speedy);
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
 
         /*if (collision.gameObject.tag == nametag ||)
@@ -28,8 +28,15 @@ public class sierradederechayizquierda : MonoBehaviour
         else if (collision.gameObject.tag == nametag1 || )
         {
             speedy *= +4;
-        }*/
+        }
         if (collision.gameObject.tag == nametag )
+        {
+            Destroy(this.gameObject);
+        }
+    }*/
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == nametag)
         {
             Destroy(this.gameObject);
         }
